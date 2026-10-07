@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Industry</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .top {
+            height: 33px;
+            background-color: #222;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 100px;
+            font-size: 12px;
+        }
+
+        .social i {
+            margin-right: 25px;
+        }
+
+        .contact span {
+            margin-left: 20px;
+        }
+
+        .navbar {
+            height: 67px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 100px;
+            background-color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            font-size: 35px;
+            color: #f5a800;
+            margin-right: 14px;
+        }
+
+        .logo h2 {
+            font-size: 21px;
+            color: #111;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #222;
+            font-size: 12px;
+            margin-left: 28px;
+        }
+
+        .menu a:hover {
+            color: #f5a800;
+        }
+
+        .hero {
+            height: 600px;
+            background-image: url("https://preview.colorlib.com/theme/industry/img/fact.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-text {
+            color: white;
+            width: 750px;
+        }
+
+        .hero-text p:first-child {
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 14px;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+
+      .hero-text button {
+    background-color: #f5a800;
+    color: white;
+    border: 2px solid #f5a800;
+    padding: 14px 30px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero-text button:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    
+}
+        .services {
+            padding: 80px 100px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .services > p {
+            color: #777;
+            margin-bottom: 50px;
+        }
+
+        .service-boxes {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .service-box {
+            width: 30%;
+            padding: 30px;
+        }
+
+        .service-box i {
+            font-size: 40px;
+            color: #f5a800;
+            margin-bottom: 20px;
+        }
+
+        .service-box h3 {
+            margin-bottom: 15px;
+        }
+
+        .service-box p {
+            color: #777;
+            line-height: 25px;
+        }
+
+        .about {
+            background-color: #f7f7f7;
+            padding: 80px 100px;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .about img {
+            width: 50%;
+        }
+
+        .about-text {
+            width: 50%;
+        }
+
+        .about-text h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: #777;
+            line-height: 27px;
+            margin-bottom: 20px;
+        }
+
+        .about-text button {
+            background-color: #f5a800;
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 14px 25px;
+            border-radius: 10px;
+        }
+
+        .about-text button:hover {
+            color: white;
+            background: black;
+            border-radius: 10px;
+        }
+
+        .projects {
+            padding: 80px 100px;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .projects > p {
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        .project-boxes {
+            display: flex;
+            gap: 20px;
+        }
+
+        .project-box {
+            width: 33%;
+        }
+
+        .project-box img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .project-box h3 {
+            margin-top: 15px;
+        }
+
+        .project-box p {
+            color: #777;
+            margin-top: 8px;
+        }
+
+        .quote {
+            background-color: #f5a800;
+            padding: 60px 100px;
+            text-align: center;
+            color: white;
+        }
+
+        .quote h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .quote p {
+            margin-bottom: 25px;
+        }
+
+        .quote button {
+            padding: 14px 30px;
+            border: none;
+            background-color: white;
+             color: #222; 
+             border-radius: 10px;
+        }
+
+        .quote button:hover {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 60px 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-box {
+            width: 30%;
+        }
+
+        .footer h3 {
+            margin-bottom: 20px;
+        }
+
+        .footer p {
+            color: #aaa;
+            line-height: 27px;
+        }
+
+        .footer i {
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top">
+
+        <div class="social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-dribbble"></i>
+            <i class="fa-brands fa-behance"></i>
+        </div>
+
+        <div class="contact">
+            <span>+880 012 3654 896</span>
+            <span>support@colorlib.com</span>
+        </div>
+
+    </div>
+
+
+    <div class="navbar">
+
+        <div class="logo">
+            <img src="https://preview.colorlib.com/theme/industry/img/logo.png" alt="">
+        </div>
+
+        <div class="menu">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICE</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">BLOG <i class="fa-solid fa-angle-down"></i></a>
+            <a href="#">CONTACT</a>
+            <a href="#">ELEMENTS</a>
+        </div>
+
+    </div>
+
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p>Don’t look further, here is the key</p>
+
+            <h1>We’re Industrial solution</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim. sed do eiusmod tempor incididunt.
+            </p>
+
+            <button>GET STARTED</button>
+
+        </div>
+
+    </section>
+
+
+    <section class="services">
+
+        <h2>Our Services</h2>
+
+        <p>We provide the best industrial services for our customers.</p>
+
+        <div class="service-boxes">
+
+            <div class="service-box">
+                <i class="fa-solid fa-gears"></i>
+                <h3>Industrial Solutions</h3>
+                <p>
+                    Complete solutions for modern industries
+                    and businesses.
+                </p>
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-building"></i>
+                <h3>Construction</h3>
+                <p>
+                    Professional construction services
+                    with quality work.
+                </p>
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Logistics</h3>
+                <p>
+                    Fast and reliable transportation
+                    and logistics services.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="about">
+
+        <img src="https://preview.colorlib.com/theme/industry/img/s2.jpg">
+
+        <div class="about-text">
+
+            <h2>We Are A Leading Industry Company</h2>
+
+            <p>
+                Our company provides high quality services
+                for different industries. We focus on quality,
+                technology and customer satisfaction.
+            </p>
+
+            <p>
+                Our experienced team works hard to provide
+                reliable solutions for every project.
+            </p>
+
+            <button>LEARN MORE</button>
+
+        </div>
+
+    </section>
+
+
+    <section class="projects">
+
+        <h2>Our Projects</h2>
+
+        <p>Some of our latest industrial projects.</p>
+
+        <div class="project-boxes">
+
+            <div class="project-box">
+                <img src="https://preview.colorlib.com/theme/industry/img/p1.jpg">
+                <h3>Industrial Project</h3>
+                <p>Construction</p>
+            </div>
+
+            <div class="project-box">
+                <img src="https://preview.colorlib.com/theme/industry/img/p2.jpg">
+                <h3>Factory Project</h3>
+                <p>Manufacturing</p>
+            </div>
+
+            <div class="project-box">
+                <img src="https://preview.colorlib.com/theme/industry/img/p3.jpg">
+                <h3>Modern Project</h3>
+                <p>Engineering</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="quote">
+
+        <h2>Looking For A Quality Service?</h2>
+
+        <p>
+            Contact us today and discuss your project with us.
+        </p>
+
+        <button>GET A QUOTE</button>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-box">
+
+            <h3>Industry</h3>
+
+            <p>
+                Professional industrial solutions
+                for modern businesses.
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Contact Us</h3>
+
+            <p>
+                +880 012 3654 896
+                <br>
+                support@colorlib.com
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Follow Us</h3>
+
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
